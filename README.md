@@ -1,10 +1,10 @@
-### Mini Project 1
+## Mini Project 1
 
 I created a scene in Maya using nCloth simulation for option 5, and implemented a simple mass-spring cloth in AMC Viewer for option 1.
 
 Presentation: https://docs.google.com/presentation/d/1imzpYMvvvcWPpJXoWOedwAWtd8bAh5vtxJbJkNqGJdg/edit?usp=sharing 
 
-#### Option 5: 
+### Option 5: 
 I learned how to use Maya’s bullet plugin and nCloth/nConstraint to simulate laundry sheets. 
 - I simulated a single sheet as a subdivided quad plane, acting as an nCloth. 
 - On the plane's edges, I selected 1-2 vertices on the boundary and added transform nConstraints to them to "pin" them in place. 
@@ -20,7 +20,7 @@ The final scene I rendered (and sped up) can be viewed at `maya-sim-scene/scene.
 
 Some other things I would have liked to try was hiearchical cloth simulation, i.e. trying to simulate a hanging laundry string as a cloth, with the laundry cloths themselves having movement that depended on the laundry string's vertex positions. I also would have liked to integrate more rigid body simulation (ex. maybe with clothespins hanging on the laundry string, or wind chimes) into the scene, but wasn't sure how to apply soft body motion (nCloths on planes) to rigid bodies (3D meshes).
 
-##### Assets used in scene: 
+#### Assets used in scene: 
 - girl: https://www.turbosquid.com/3d-models/girl-skurt-3d-model-1256673 
 - stool: https://www.cgtrader.com/free-3d-models/interior/other/metal-art-stool 
 - table: https://www.cgtrader.com/items/703385/download-page 
@@ -31,7 +31,7 @@ Some other things I would have liked to try was hiearchical cloth simulation, i.
 - iron: https://www.cgtrader.com/items/3393594/download-page 
 - environment map: https://polyhaven.com/a/table_mountain_2_puresky 
 
-#### Option 1: 
+### Option 1: 
 I implemented a simple mass-spring with forward euler integration in AMC Viewer, with stretch, shear, and bend springs on a gridded cloth. 
 
 I added an extra `m_Fixed` field to the `Particle` type, to fix certain particles on the cloth so I could test the spring behaviors (ex. without having the entire cloth just fall due to gravity). For fixed particles, I computed their spring forces, but did not apply the forces to the particles or change their preset velocities and positions. For other particles, I computed their spring forces and forces applied on them due to gravity, using these to update their positions and velocities at each timestep using forward Euler integration.

@@ -1,4 +1,4 @@
-## Mini Project 1
+## 15-464 Mini Project 2
 
 I created a scene in Maya using nCloth simulation for option 5, and implemented a simple mass-spring cloth in AMC Viewer for option 1.
 

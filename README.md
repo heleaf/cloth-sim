@@ -16,7 +16,7 @@ The scene I created (of a girl sleeping in the middle of doing laundry on a balc
 
 The animation settings I had the scene on when I simulated it played frames much faster than 24 fps, so I ended up speeding up the final scene I rendered by a fair amount. 
 
-The final scene I rendered (and sped up) can be viewed at `maya-sim-scene/scene.mp4`. 
+The final scene I rendered (and sped up) can be viewed at `maya-sim-scene/scene.mp4`. I rendered the scene using Arnold, and used a mix of materials from online assets and Maya's default materials. 
 
 Some other things I would have liked to try was hiearchical cloth simulation, i.e. trying to simulate a hanging laundry string as a cloth, with the laundry cloths themselves having movement that depended on the laundry string's vertex positions. I also would have liked to integrate more rigid body simulation (ex. maybe with clothespins hanging on the laundry string, or wind chimes) into the scene, but wasn't sure how to apply soft body motion (nCloths on planes) to rigid bodies (3D meshes).
 

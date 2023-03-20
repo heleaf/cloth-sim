@@ -2,7 +2,7 @@
 
 I created a scene in Maya using nCloth simulation for option 5, and implemented a simple mass-spring cloth in AMC Viewer for option 1.
 
-Presentation: https://docs.google.com/presentation/d/1imzpYMvvvcWPpJXoWOedwAWtd8bAh5vtxJbJkNqGJdg/edit?usp=sharing 
+**Presentation:** https://docs.google.com/presentation/d/1imzpYMvvvcWPpJXoWOedwAWtd8bAh5vtxJbJkNqGJdg/edit?usp=sharing 
 
 ### Option 5: 
 I learned how to use Maya’s bullet plugin and nCloth/nConstraint to simulate laundry sheets. 
